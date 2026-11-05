@@ -1,0 +1,59 @@
+/* Main page styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+main {
+    max-width: 840px;
+    margin: 20px auto;
+}
+
+h1 {
+    color: #164b35;
+}
+
+main img {
+    width: 200px;
+    height: auto;
+    border: 2px solid #333;
+    padding: 5px;
+    box-shadow: 0 0 10px gray;
+}
+
+aside {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #333;
+    padding: 15px;
+    background-color: #164b35;
+    color: white;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+p {
+    padding: 0;
+}
+
+footer {
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    text-align: center;
+}
