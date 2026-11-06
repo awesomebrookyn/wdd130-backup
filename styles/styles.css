@@ -1,59 +1,130 @@
-/* Main page styles */
+
+/* Dubai-inspired WDD 130 Homepage Styles */
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: #f5f1e8;
+    color: #263238;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #102a43;
 }
 
 nav {
-    background-color: #333;
-    padding: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 nav a {
     color: white;
+    text-decoration: none;
     padding: 10px;
-    display: block;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e5b45b;
 }
 
 main {
     max-width: 840px;
-    margin: 20px auto;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
 }
 
 h1 {
-    color: #164b35;
+    color: #102a43;
+    text-align: center;
+}
+
+h2 {
+    color: #b88636;
 }
 
 main img {
-    width: 200px;
+    max-width: 100%;
+    width: 300px;
     height: auto;
-    border: 2px solid #333;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #d6ad60;
+    border-radius: 8px;
     padding: 5px;
-    box-shadow: 0 0 10px gray;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.tags span {
+    background-color: #102a43;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px;
 }
 
 aside {
-    width: 300px;
-    margin: 20px auto;
-    border: 1px solid #333;
-    padding: 15px;
-    background-color: #164b35;
+    max-width: 840px;
+    margin: 25px auto;
+    padding: 20px;
+    border: 2px solid #d6ad60;
+    background-color: #102a43;
     color: white;
+    text-align: center;
+}
+
+aside h2 {
+    color: #e5b45b;
 }
 
 aside img {
     width: 200px;
+    max-width: 100%;
     height: auto;
-}
-
-p {
-    padding: 0;
+    border-radius: 8px;
 }
 
 footer {
-    margin-top: 20px;
-    border-top: 1px solid #333;
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 3px solid #d6ad60;
+    background-color: #102a43;
+    color: white;
     text-align: center;
+}
+
+p {
+    padding: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    main,
+    aside {
+        margin: 15px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    main img {
+        width: 100%;
+        max-width: 300px;
+    }
 }
